@@ -1,6 +1,6 @@
 .profile-card {
     width: 100%;
-    text-align: center;
+    text-align: left;
     color: white;
     padding: 30px 0;
     line-height: 1.4;
@@ -8,21 +8,26 @@
     text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
 }
 
+.profile-wrapper {
+      padding: 16px 10px 0 10px;
+}
+
+.profile-namestuff {
+    margin-left: 30px;
+}
 .profile-image {
-    height: 100px;
     width: 100px;
+    height: 100px;
+    margin-right:30px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    background-color: black;
-    border 1px solid white;
-    box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
-    -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+    border: inset 1px rgba(0, 0, 0, 0.3);
 }
 
 .profile-name {
-    margin: 20px 0 0 0;
+    //padding: 20px 0 0 0;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 37px;
 }
 
 .profile-id {
@@ -32,28 +37,9 @@
 }
 
 .profile-desc {
-    font-size: 15px;
-    opacity: 0.6;
+    font-size: 25px;
+    //opacity: 0.6;
     width: 90%;
     text-align: center;
     margin: 0 auto;
 }
-
-.info-col {
-    height: 60px;
-    line-height: 1;
-    padding: 12px 0 12px 4px;
-}
-
-.info-num {
-    font-size: 16px;
-    font-weight: 500;
-    opacity: 0.8;
-}
-
-.info-unit {
-    margin-top: 6px;
-    font-size: 14px;
-    opacity: 0.4;
-}
-
