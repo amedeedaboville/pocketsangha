@@ -21,4 +21,14 @@
 .zen { background-color: tomato; }
 .yoga { background-color: lightslategray; }
 
-
+.day-name {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight:400;
+}
+.day-events {
+    margin-left:10px;
+}
+.event-tags {
+    margin-bottom:10px;
+}
