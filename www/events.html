@@ -1,11 +1,12 @@
 <ons-page>
+<ons-navigator var="myNavigator">
 <ons-toolbar>
 <div class="center">
     Events In Your City
 </div>
 <div class="right">
-    <ons-toolbar-button>
-    <ons-icon icon="ion-ios7-search-strong" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
+    <ons-toolbar-button ng-click="myNavigator.pushPage('new_event.html')">
+    <ons-icon id="create-event" icon="fa-plus" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
     </ons-toolbar-button>
 </div>
 </ons-toolbar>
@@ -20,7 +21,7 @@
     'Sunday'] ">
 
     <div class="day-events">
-    <ons-list class="timeline">
+        <ons-list class="timeline">
 
         <ons-list-item class="timeline-li" ng-repeat="day in days">
         <div class="day-name"> {{ day }}</div>
@@ -31,9 +32,9 @@
         </div>
         </ons-row>
         <div class="event-tags">
-        <div class="tag beginner">sitting</div>
-        <div class="tag intermediate">informal</div>
-        <div class="tag expert">small</div>
+            <div class="tag beginner">sitting</div>
+            <div class="tag intermediate">informal</div>
+            <div class="tag expert">small</div>
         </div>
         <ons-row>
         <div class="timline-from">
@@ -42,10 +43,11 @@
         </div>
         </ons-row>
         <div class="event-tags">
-        <div class="tag mahayana">conference</div>
-        <div class="tag zen">large</div>
+            <div class="tag mahayana">conference</div>
+            <div class="tag zen">large</div>
         </div>
         </ons-list-item>
         </ons-list>
     </div>
+    </ons-navigator
     </ons-page>
