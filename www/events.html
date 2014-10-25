@@ -1,0 +1,47 @@
+<ons-page>
+<ons-toolbar>
+<div class="center">
+    Events In Your City
+</div>
+<div class="right">
+    <ons-toolbar-button>
+    <ons-icon icon="ion-ios7-search-strong" fixed-width="false" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
+    </ons-toolbar-button>
+</div>
+</ons-toolbar>
+
+<div ng-init="days = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday'] ">
+    <div class="day-events" ng-repeat="day in days">
+        {{ day }}
+        <ons-list class="timeline" modifier="inset">
+        <ons-list-item class="timeline-li" modifier="tappable">
+        <ons-row>
+        <div class="timline-from">
+            <span class="timeline-name">Sitting At Melissa's</span>
+            <span class="timeline-id">@melissa</span>
+        </div>
+        <div class="tag beginner">sitting</div>
+        <div class="tag intermediate">informal</div>
+        <div class="tag expert">small</div>
+        </ons-row>
+        </ons-list-item>
+
+
+        <ons-list-item class="timeline-li" modifier="tappable">
+        <div class="timline-from">
+            <span class="timeline-name">ISCS 2014</span>
+            <span class="timeline-id">@iscs</span>
+        </div>
+        <div class="tag mahayana">conference</div>
+        <div class="tag zen">large</div>
+        </ons-list-item>
+        </ons-list>
+    </div>
+    </ons-page>
