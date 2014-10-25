@@ -1,13 +1,28 @@
 pocketsangha
 ============
-Repo for ISCS 14' app. How to develop on:
-* install node.js etc
-* install cordova: "npm install -g cordova"
-* do "cordova create pocketsangha"
-* move this repo into the new pocketsangha folder
+![Screenshot](https://raw.github.com/amedeedaboville/pocketsangha/master/screenshot.png)
 
-how to run:
-* either open www/index.html with a browser
-* or run 'cordova emulate android' to run the android emulator
+Repo for ISCS 14' app. How to develop on:
+* install node.js
+* install cordova: 'npm install -g cordova'
+* do "cordova create pocketsangha"
+* move the contents of this folder into the new pocketsangha folder
+
+Browser
+-------
+Setup:
+* 'cordova platform add browser --usegit'
+Then to run use
+* 'cordova run browser'
+
+Android
+------
+Setup:
+* Download the android sdk.
+* Add the /sdk/tools folder to your $PATH.
+* Create an AVD image.
+* run 'cordova platform add android'
+To run:
+* 'cordova emulate android' to use the emulator
 
 
