@@ -1,3 +1,21 @@
 .left {
-	text-align: left;
+    text-align: left;
 }
+.tag {
+    display:inline-block;
+    padding: 3px 6px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+    border-radius: 2px;
+}
+.beginner { background-color: #C7DCB9; }
+.intermediate { background-color: #aac2a0; }
+.expert { background-color: #66A590; }
+.mahayana { background-color: palegoldenrod; }
+.theravada { background-color: #edb757; }
+.zen { background-color: tomato; }
+.yoga { background-color: lightslategray; }
+
+
