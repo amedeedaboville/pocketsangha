@@ -1,4 +1,5 @@
 <ons-page>
+<ons-navigator var="myNavigator">
 <ons-toolbar>
 <div class="center">
     Events In Your City
@@ -37,7 +38,7 @@
                 <div class="tag expert">small</div>
             </div>
         </div>
-        <div class="event-li" ng-click="myNavigator.pushPage('event_details.html')">
+        <div class="event-li" ng-click="myNavigator.pushPage('new_event.html')">
             <ons-row>
             <div class="timline-from">
                 <span class="timeline-name">ISCS 2014</span>
@@ -52,4 +53,5 @@
         </ons-list-item>
         </ons-list>
     </div>
+    </ons-navigator>
     </ons-page>
