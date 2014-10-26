@@ -22,29 +22,33 @@
 
     <div class="day-events">
         <ons-list class="timeline">
-
         <ons-list-item class="timeline-li" ng-repeat="day in days">
+
         <div class="day-name"> {{ day }}</div>
-        <ons-row>
-        <div class="timline-from">
-            <span class="timeline-name">Sitting At Melissa's</span>
-            <span class="timeline-id">@melissa</span>
+        <div class="event-li" ng-click="myNavigator.pushPage('event_details.html')">
+            <ons-row>
+            <div class="timeline-from">
+                <span class="timeline-name">Sitting At Melissa's</span>
+                <span class="timeline-id">@melissa</span>
+            </div>
+            </ons-row>
+            <div class="event-tags">
+                <div class="tag beginner">sitting</div>
+                <div class="tag intermediate">informal</div>
+                <div class="tag expert">small</div>
+            </div>
         </div>
-        </ons-row>
-        <div class="event-tags">
-            <div class="tag beginner">sitting</div>
-            <div class="tag intermediate">informal</div>
-            <div class="tag expert">small</div>
-        </div>
-        <ons-row>
-        <div class="timline-from">
-            <span class="timeline-name">ISCS 2014</span>
-            <span class="timeline-id">@iscs</span>
-        </div>
-        </ons-row>
-        <div class="event-tags">
-            <div class="tag mahayana">conference</div>
-            <div class="tag zen">large</div>
+        <div class="event-li" ng-click="myNavigator.pushPage('event_details.html')">
+            <ons-row>
+            <div class="timline-from">
+                <span class="timeline-name">ISCS 2014</span>
+                <span class="timeline-id">@iscs</span>
+            </div>
+            </ons-row>
+            <div class="event-tags">
+                <div class="tag mahayana">conference</div>
+                <div class="tag zen">large</div>
+            </div>
         </div>
         </ons-list-item>
         </ons-list>
