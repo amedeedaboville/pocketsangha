@@ -5,7 +5,7 @@
   <ons-toolbar-button><ons-icon icon="ion-ios7-chatboxes" style="color: white"></ons-icon></ons-toolbar-button>
 </div>
 <div class="left">
-  <ons-toolbar-button><ons-icon icon="ion-arrow-left-c" style="color: white; font-size: 28px;" fixed-width="false"></ons-icon></ons-toolbar-button>
+  <ons-toolbar-button ng-click="myNavigator.popPage()"><ons-icon icon="ion-arrow-left-c" style="color: white; font-size: 28px;" fixed-width="false"></ons-icon></ons-toolbar-button>
 </div>
 </ons-toolbar>
 
@@ -13,7 +13,7 @@
 
   <div class="card">
 
-    <div class="card-name">Sitting at Joe's</div>
+    <div class="card-name">Sitting at Melissa's</div>
     <div class="card-desc">Meditation and tea ceremony<br>Starts 11:30 am</div>
   </div>
 
@@ -25,17 +25,17 @@
 </div>
 </ons-list-item>
 
-<ons-list-item modifier="chevron">
+<ons-list-item>
 <div class="prop-desc">
-  <ons-icon icon="fa-map-marker"></ons-icon>
-  133 Main St.
+  <ons-icon icon="fa-group"></ons-icon>
+  Size: Small (5-10 people)
 </div>
 </ons-list-item>
 
 <ons-list-item modifier="chevron">
-<div class="prop-desc">
-  <ons-icon icon="fa-mobile"></ons-icon>
-  (555) 123-4567
+<div class="prop-desc" ng-click="myNavigator.pushPage('event_map.html')">
+  <ons-icon icon="fa-map-marker"></ons-icon>
+  133 Main St.
 </div>
 </ons-list-item>
 
@@ -43,6 +43,13 @@
 <div class="prop-desc">
   <ons-icon icon="icon-info-sign"></ons-icon>
   Hey folks, I'm hosting a lunchtime sitting again this week. I want to keep it small. Maybe 5-10 people.
+</div>
+</ons-list-item>
+
+<ons-list-item modifier="chevron">
+<div class="prop-desc">
+  <ons-icon icon="fa-mobile"></ons-icon>
+  (555) 123-4567
 </div>
 </ons-list-item>
 
@@ -57,6 +64,7 @@
 </ons-list>
 
 </div>
+
 
 </ons-page>
 

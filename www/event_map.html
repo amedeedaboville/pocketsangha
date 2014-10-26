@@ -1,0 +1,31 @@
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+    angular.element(document.body).on('pageinit', '#map-page', function() {
+        console.log("map page being initialized");
+        angular.element.getScript('https://www.google.com/jsapi', function()
+        {
+            google.load('maps', '3', { other_params: 'sensor=false', callback: function()
+                {
+                    var mapOptions = {
+                        center: { lat: -34.397, lng: 150.644},
+                        zoom: 8
+                    };
+                    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                    console.log("map created.");
+            }});
+        });
+    });
+</script>
+<ons-page id="event-map-page">
+<ons-toolbar>
+<div class="center">
+    133 Main St.
+</div>
+<div class="left">
+  <ons-toolbar-button ng-click="myNavigator.popPage()"><ons-icon icon="ion-arrow-left-c" style="color: blue; font-size: 28px;" fixed-width="false"></ons-icon></ons-toolbar-button>
+</div>
+</ons-toolbar>
+
+    <img src="images/mapdummy.png"></img>
+    <div id="map-canvas"><div>
+</ons-page>
