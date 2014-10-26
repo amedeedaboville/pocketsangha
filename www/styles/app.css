@@ -33,5 +33,24 @@
 .event-li {
     margin-top:5px;
     margin-bottom:10px;
-    //padding-bottom:10px;
+}
+
+.rate-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight:400;
+    margin-top: 70px;
+    margin-bottom:20px;
+}
+.event-rating {
+    text-align: center;
+    font-size: 50px;
+    color:tomato;
+    height:40%;
+    display:inline-flex;
+}
+.rating-stars{
+    text-align: center;
+    display:block;
+    margin:auto;
 }

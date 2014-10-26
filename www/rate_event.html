@@ -1,0 +1,34 @@
+<ons-page>
+<ons-toolbar>
+<div class="center">
+    Rate an Event
+</div>
+<div class="right">
+    <!--<ons-toolbar-button ng-click="myNavigator.reset('new_event.html')">-->
+    Skip
+    <ons-icon id="create-event" icon="fa-angle-right" style="font-size: 26px; vertical-align: -4px;"></ons-icon>
+</div>
+</ons-toolbar>
+<div class="rate-title">Sitting At Melissa's</div>
+<div class="event-rating">
+    <div class="rating-stars">
+        <ons-icon id="event-star-1" icon="ion-ios7-star"  onclick="setScore(1)"></ons-icon> 
+        <ons-icon id="event-star-2" icon="ion-ios7-star"  onclick="setScore(2)"></ons-icon> 
+        <ons-icon id="event-star-3" icon="ion-ios7-star"  onclick="setScore(3)"></ons-icon> 
+        <ons-icon id="event-star-4" icon="ion-ios7-star"  onclick="setScore(4)"></ons-icon> 
+        <ons-icon id="event-star-5" icon="ion-ios7-star-outline"          onclick="setScore(5)"></ons-icon> 
+    </div>
+</div>
+<script>
+    function setScore(score) {
+        console.log("setting score to " + score);
+        for(var i = 1; i < score; i++) {
+            $('#event-star-' + i).attr('icon', 'fa-star')
+        }
+        for(var i = score; i < 5; i++) {
+            $('#event-star-' + i).attr('icon', 'fa-star-o')
+        }
+    }
+
+</script>
+</ons-page>
