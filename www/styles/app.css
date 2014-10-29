@@ -14,13 +14,22 @@
     margin-top:5px;
     line-height:1;
 }
-.beginner { background-color: #C7DCB9; }
-.intermediate { background-color: #aac2a0; }
-.expert { background-color: #66A590; }
-.mahayana { background-color: palegoldenrod; }
-.theravada { background-color: #edb757; }
-.zen { background-color: tomato; }
-.yoga { background-color: lightslategray; }
+.beginner { background-color: #9df2c5; }
+.intermediate { background-color: #4eda90; }
+.expert { background-color: #1ab563; }
+
+.mahayana { background-color: #d721cd; }
+.theravada { background-color: #4974ff; }
+.zen { background-color: #52c7ce; }
+.yoga { background-color: #9353e2; }
+
+.small {background-color: #ffde00;}
+.medium {background-color: #ffae00;}
+.large {background-color: #ff8400;}
+
+.discussion {background-color: #ffb4c8;}
+.workshop {background-color: #fa5983;}
+.conference {background-color: #d71245;}
 
 .day-name {
     text-decoration: underline;
